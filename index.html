@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR HALAL-FOOD</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> -->
+    <link rel="stylesheet" href="stylesheet/slick.css">
+    <link rel="stylesheet" href="stylesheet/slick-theme.css">
+
+</head>
+<body>
+    <!-- header -->
+     <header class="header-top">
+        <div class="container">
+            <div class="row">
+                    <div class="col-lg-4 col-md-3">
+                        <div class="num">
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                            <a href="tel:+998 99 999 99 99">+998 99 999 99 99</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-3">
+                        <div class="header-con">
+                            <h4>Free SHIPPING on orders over $199 </h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="header-right d-flex">
+                            <div class="header-locator">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <a href="#">Store Location</a>
+                            </div>
+                            <div class="header-locator">
+                                <i class="fa fa-car" aria-hidden="true"></i>
+                                <a href="#">Order Tracking</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+     </header>
+    <!-- header -->
+
+    <!-- nav -->
+
+    
+    <!-- Navbar -->
+
+ <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark position-relative">
+    <div class="container-fluid px-3 d-flex flex-column align-items-stretch pt-2 gap-2">
+
+      <!-- Top Row (Mobile Only): Logo Left, Search Right -->
+      <div class="d-flex d-lg-none justify-content-between align-items-center w-100">
+        <a class="navbar-brand m-0 animate__animated animate__backInRight
+        " href="index.html">
+          <img src="images/logo.png" alt="Logo" style="height: 45px;">
+        </a>
+        <button class="btn btn-outline-light btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+
+      <!-- Middle Row (Mobile Only): Categories Left, Menu Right -->
+      <div class="d-flex d-lg-none justify-content-between align-items-center w-100">
+        <button class="btn btn-outline-light btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#mobileCategories">
+          Categories
+        </button>
+        <button class="btn btn-outline-light btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Main Row (Large Screen Only) -->
+      <div class="d-none d-lg-flex justify-content-between align-items-center w-100">
+        <!-- Left: Home & Categories -->
+        <div class="d-flex gap-3 align-items-center">
+          <!-- <a class="nav-link" href="#">Home</a> -->
+          <div class="dropdown" id="tt-home">
+            <a href="#" class="nav-link dropdown-toggle" role="button">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Beaf</a></li>
+              <li><a class="dropdown-item" href="#">Meat</a></li>
+              <li><a class="dropdown-item" href="#">Chicken</a></li>
+              <li><a class="dropdown-item" href="#">Spices</a></li>
+            </ul>
+          </div>
+          <a class="nav-link" href="about.html">About Us</a>
+          <a class="nav-link" href="contact.html">Contact Us</a>
+          <!-- <div class="dropdown" id="tt-home">
+            <a href="#" class="nav-link dropdown-toggle" role="button">More</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Contact Us</a></li>
+            </ul>
+          </div> -->
+          
+        </div>
+
+        <!-- Center: Logo -->
+        <a class="navbar-brand m-0 animate__animated animate__backInRight
+        " href="index.html">
+          <img src="images/logo.png" alt="Logo" style="height: 45px;">
+        </a>
+
+        <!-- Right: Search, Cart, Wishlist, Account -->
+        <div class="d-flex align-items-center gap-3">
+          <button id="toggleSearch" class="btn btn-outline-light btn-sm" type="button">
+            <i class="fa fa-search"></i>
+          </button>
+
+          <form id="searchForm" class="d-flex search-form animate-hidden">
+            <input class="form-control form-control-sm me-2" type="search" placeholder="Search..." />
+            <button class="btn btn-outline-light btn-sm" type="submit"><i class="fa fa-search"></i></button>
+          </form>
+
+          <a href="#" class="btn btn-outline-light btn-sm">
+            <i class="fa fa-heart"></i>
+          </a>
+          <!-- <a href="#" class="btn btn-outline-light btn-sm">
+            <i class="fa fa-shopping-cart"></i>
+          </a> -->
+          <button class="btn btn-outline-light btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa fa-shopping-cart"></i></button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel">Your Cart</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column justify-content-between">
+              
+              <!-- Cart Items -->
+              <div id="cart-items">
+                <!-- Single Cart Item -->
+                <div class="d-flex mb-3 border-bottom pb-3">
+                  <img src="images/populer/1.jpg" class="rounded me-3" style="width: 70px; height: 70px; object-fit: cover;">
+                  <div class="flex-grow-1">
+                    <h6 class="mb-1">Product Name</h6>
+                    <div class="small text-muted">Qty: 2 × $25.00</div>
+                  </div>
+                  <div class="ms-3 fw-semibold">$50.00</div>
+                </div>
+          
+                <!-- Repeat more items as needed -->
+              </div>
+          
+              <!-- Cart Summary -->
+              <div class="mt-4 border-top pt-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="fw-semibold">Subtotal</span>
+                  <span>$150.00</span>
+                </div>
+                <div class="d-grid gap-2 mt-3">
+                  <a href="" class="btn btn-outline-dark off-cart">View Cart</a>
+                  <a href="" class="btn off-check">Proceed to Checkout</a>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          
+
+
+          <a href="login.html" class="btn btn-outline-light btn-sm">
+            <i class="fa fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Collapse Categories -->
+  <div class="collapse bg-light" id="mobileCategories">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><a href="#">Category 1</a></li>
+      <li class="list-group-item"><a href="#">Category 2</a></li>
+    </ul>
+  </div>
+
+  <!-- Offcanvas: Mobile Menu -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <a class="btn btn-outline-secondary w-100 mb-2" href="#">Cart</a>
+      <a class="btn btn-outline-secondary w-100 mb-2" href="#">Wishlist</a>
+      <a class="btn btn-outline-secondary w-100" href="#">Account</a>
+    </div>
+  </div>
+
+  <!-- Search Modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen-sm-down">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="searchModalLabel">Search</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search..." />
+            <button class="btn btn-outline-light" type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Nav (Mobile Only) -->
+  <ul class="nav bottom-nav nav-pills">
+    <li class="nav-item flex-fill text-center">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item flex-fill text-center">
+      <a class="nav-link" href="#">Account</a>
+    </li>
+    <li class="nav-item flex-fill text-center">
+      <a class="nav-link" href="#">More</a>
+    </li>
+  </ul>
+</div>
+    
+    <!-- nav -->
+
+
+    <!-- banner -->
+    <section id="banner">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="banner-slider">
+                <div class="ban-item">
+                  <img src="images/banner/banner-1.jpg" alt="">
+                </div>
+                <div class="ban-item">
+                  <img src="images/banner/banner-2.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <!-- banner -->
+
+
+    <!-- shipping -->
+     <section id="shipping">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 shipping">
+                    <div class="ship">
+                      <div class="ship-certify text-center">
+                        <i class="fa fa-certificate" aria-hidden="true"></i>
+                        <h6>Certified Halal</h6>
+                      </div>
+                      <p>Find our certificate <br> <a href="">HERE</a></p>
+                    </div>
+                  </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 shipping">
+                    <div class="ship">
+                      <div class="ship-certify text-center">
+                        <i class="fa fa-car" aria-hidden="true"></i>
+                        <h6>Free Shipping</h6>
+                      </div>
+                      <p>Find our certificate <br> <a href="">HERE</a></p>
+                    </div>
+                  </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 shipping">
+                    <div class="ship">
+                      <div class="ship-certify text-center">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <h6>Rewards on every order</h6>
+                      </div>
+                      <p>Find our certificate <br> <a href="">HERE</a></p>
+                    </div>
+                  </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 shipping">
+                    <div class="ship">
+                      <div class="ship-certify text-center">
+                        <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                        <h6>National Delivery</h6>
+                      </div>
+                      <p>Find our certificate <br> <a href="">HERE</a></p>
+                    </div>
+                  </div>
+                  
+            </div>
+        </div>
+     </section>
+    <!-- shipping -->
+
+
+    <!-- popular -->
+     <section id="popular">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="popular-title">
+                <h2 class="text-center">Popular Selection</h2>
+              </div>
+              <div class="populer-model">
+                <ul class="nav nav-tabs text-center" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Halal Beef Products</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Halal Chicken Products</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="popular-slider">
+                      <div class="ban-item">
+                        <div class="ban-img-wrapper">
+                          <img src="images/populer/1.jpg" alt="">
+                    
+                          <div class="ban-overlay">
+                            <button class="btn cart-btn">
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                    
+                            <div class="side-buttons">
+                              <a href="product.html" class="btn side-btn">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                              <a href="#" class="btn side-btn">
+                                <i class="fa fa-heart"></i>
+                              </a>
+                            </div>
+                          </div>
+                         
+                        </div>
+                        <div class="popular-content">
+                          <h6>Beef</h6>
+                          <h4>$3.00</h4>
+                          <ul class="d-flex justify-content-start p-0 m-0">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="ban-item">
+                        <div class="ban-img-wrapper">
+                          <img src="images/populer/2.jpg" alt="">
+                    
+                          <div class="ban-overlay">
+                            <button class="btn cart-btn">
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                    
+                            <div class="side-buttons">
+                              <a href="product.html" class="btn side-btn">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                              <a href="#" class="btn side-btn">
+                                <i class="fa fa-heart"></i>
+                              </a>
+                            </div>
+                          </div>
+                         
+                        </div>
+                        <div class="popular-content">
+                          <h6>Beef</h6>
+                          <h4>$3.00</h4>
+                          <ul class="d-flex justify-content-start p-0 m-0">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="ban-item">
+                        <div class="ban-img-wrapper">
+                          <img src="images/populer/3.jpg" alt="">
+                    
+                          <div class="ban-overlay">
+                            <button class="btn cart-btn">
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                    
+                            <div class="side-buttons">
+                              <a href="#" class="btn side-btn">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                              <a href="#" class="btn side-btn">
+                                <i class="fa fa-heart"></i>
+                              </a>
+                            </div>
+                          </div>
+                         
+                        </div>
+                        <div class="popular-content">
+                          <h6>Beef</h6>
+                          <h4>$3.00</h4>
+                          <ul class="d-flex justify-content-start p-0 m-0">
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="ban-item">
+                        <div class="ban-img-wrapper">
+                          <img src="images/populer/4.jpg" alt="">
+                    
+                          <div class="ban-overlay">
+                            <button class="btn cart-btn">
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                    
+                            <div class="side-buttons">
+                              <a href="#" class="btn side-btn">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                              <a href="#" class="btn side-btn">
+                                <i class="fa fa-heart"></i>
+                              </a>
+                            </div>
+                          </div>
+                         
+                        </div>
+                        <div class="popular-content text-center">
+                          <h6>Beef</h6>
+                          <h4>$3.00</h4>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="popular-slider">
+                      <div class="ban-item">
+                        <div class="ban-img-wrapper">
+                          <img src="images/populer/1.jpg" alt="">
+                    
+                          <div class="ban-overlay">
+                            <button class="btn cart-btn">
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                    
+                            <div class="side-buttons">
+                              <a href="product.html" class="btn side-btn">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                              <a href="#" class="btn side-btn">
+                                <i class="fa fa-heart"></i>
+                              </a>
+                            </div>
+                          </div>
+                         
+                        </div>
+                        <div class="popular-content text-center">
+                          <h6>Beef</h6>
+                          <h4>$3.00</h4>
+                        </div>
+                      </div>
+                      <div class="ban-item">
+                        <div class="ban-img-wrapper">
+                          <img src="images/populer/2.jpg" alt="">
+                    
+                          <div class="ban-overlay">
+                            <button class="btn cart-btn">
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                    
+                            <div class="side-buttons">
+                              <a href="#" class="btn side-btn">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                              <a href="#" class="btn side-btn">
+                                <i class="fa fa-heart"></i>
+                              </a>
+                            </div>
+                          </div>
+                         
+                        </div>
+                        <div class="popular-content text-center">
+                          <h6>Beef</h6>
+                          <h4>$3.00</h4>
+                        </div>
+                      </div>
+                      <div class="ban-item">
+                        <div class="ban-img-wrapper">
+                          <img src="images/populer/3.jpg" alt="">
+                    
+                          <div class="ban-overlay">
+                            <button class="btn cart-btn">
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                    
+                            <div class="side-buttons">
+                              <a href="#" class="btn side-btn">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                              <a href="#" class="btn side-btn">
+                                <i class="fa fa-heart"></i>
+                              </a>
+                            </div>
+                          </div>
+                         
+                        </div>
+                        <div class="popular-content text-center">
+                          <h6>Beef</h6>
+                          <h4>$3.00</h4>
+                        </div>
+                      </div>
+                      <div class="ban-item">
+                        <div class="ban-img-wrapper">
+                          <img src="images/populer/4.jpg" alt="">
+                    
+                          <div class="ban-overlay">
+                            <button class="btn cart-btn">
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                    
+                            <div class="side-buttons">
+                              <a href="product.html" class="btn side-btn">
+                                <i class="fa fa-eye"></i>
+                              </a>
+                              <a href="#" class="btn side-btn">
+                                <i class="fa fa-heart"></i>
+                              </a>
+                            </div>
+                          </div>
+                         
+                        </div>
+                        <div class="popular-content text-center">
+                          <h6>Beef</h6>
+                          <h4>$3.00</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popular-btn text-center">
+                <a class="btn-11" href="#">Explore More</a>
+              </div>
+              
+              
+
+            </div>
+          </div>
+        </div>
+     </section>
+    <!-- popular -->
+
+
+    <!-- hot selling -->
+     <section id="hot-selling">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            
+            <div class="order-ban position-relative">
+              <a href="">
+                <div class="order-content">
+                  <img src="images/order-ban.webp" alt="Order Kabab" class="img-fluid">
+                  <span class="order-label">Order Kabab</span>
+                </div>
+              </a>
+            </div>
+            
+            <!-- hot selling -->
+             <div class="hot">
+              <div class="popular-title">
+                <h2 class="text-center">Hot Selling</h2>
+                <h6>Kabab</h6>
+              </div>
+              <div class="popular-slider">
+                <div class="ban-item">
+                  <div class="ban-img-wrapper">
+                    <img src="images/populer/1.jpg" alt="">
+              
+                    <div class="ban-overlay">
+                      <button class="btn cart-btn">
+                        <i class="fa fa-shopping-cart"></i> Add to Cart
+                      </button>
+              
+                      <div class="side-buttons">
+                        <a href="#" class="btn side-btn">
+                          <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="#" class="btn side-btn">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                      </div>
+                    </div>
+                   
+                  </div>
+                  <div class="popular-content">
+                    <h6>Beef</h6>
+                    <h4>$3.00</h4>
+                    <ul class="d-flex justify-content-start p-0 m-0">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ban-item">
+                  <div class="ban-img-wrapper">
+                    <img src="images/populer/2.jpg" alt="">
+              
+                    <div class="ban-overlay">
+                      <button class="btn cart-btn">
+                        <i class="fa fa-shopping-cart"></i> Add to Cart
+                      </button>
+              
+                      <div class="side-buttons">
+                        <a href="#" class="btn side-btn">
+                          <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="#" class="btn side-btn">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                      </div>
+                    </div>
+                   
+                  </div>
+                  <div class="popular-content">
+                    <h6>Beef</h6>
+                    <h4>$3.00</h4>
+                    <ul class="d-flex justify-content-start p-0 m-0">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ban-item">
+                  <div class="ban-img-wrapper">
+                    <img src="images/populer/3.jpg" alt="">
+              
+                    <div class="ban-overlay">
+                      <button class="btn cart-btn">
+                        <i class="fa fa-shopping-cart"></i> Add to Cart
+                      </button>
+              
+                      <div class="side-buttons">
+                        <a href="#" class="btn side-btn">
+                          <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="#" class="btn side-btn">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                      </div>
+                    </div>
+                   
+                  </div>
+                  <div class="popular-content">
+                    <h6>Beef</h6>
+                    <h4>$3.00</h4>
+                    <ul class="d-flex justify-content-start p-0 m-0">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ban-item">
+                  <div class="ban-img-wrapper">
+                    <img src="images/populer/4.jpg" alt="">
+              
+                    <div class="ban-overlay">
+                      <button class="btn cart-btn">
+                        <i class="fa fa-shopping-cart"></i> Add to Cart
+                      </button>
+              
+                      <div class="side-buttons">
+                        <a href="#" class="btn side-btn">
+                          <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="#" class="btn side-btn">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                      </div>
+                    </div>
+                   
+                  </div>
+                  <div class="popular-content">
+                    <h6>Beef</h6>
+                    <h4>$3.00</h4>
+                    <ul class="d-flex justify-content-start p-0 m-0">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="popular-btn text-center">
+                <a class="btn-11" href="#">Explore More</a>
+              </div>
+             </div>
+            <!-- hot selling -->
+            
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- hot selling -->
+
+
+    <!-- follow -->
+
+    <section id="follow">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="follow-con text-center">
+              <h3>Follow Halal Foods on Instagram</h3>
+              <a href=""><p class="animate__animated animate__backInLeft">#halalfood</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- follow -->
+
+
+    <!-- recipe -->
+     <section id="recipe">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-12">
+            <div class="popular-title text-center">
+              <h2 >Recipe</h2>
+              <h4>Check Back Every Friday For a New Recipe</h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+            <div class="food-card">
+              <img src="images/populer/1.jpg" alt="Beef Nihari" class="card-img">
+              <div class="card-content">
+                <h3 class="card-title">Fresh and Flavorful Beef Nihari</h3>
+                <p class="card-date">August 28, 2024</p>
+                <a href="#" class="card-link">Read More »</a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+            <div class="food-card">
+              <img src="images/populer/1.jpg" alt="Beef Nihari" class="card-img">
+              <div class="card-content">
+                <h3 class="card-title">Fresh and Flavorful Beef Nihari</h3>
+                <p class="card-date">August 28, 2024</p>
+                <a href="#" class="card-link">Read More »</a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+            <div class="food-card">
+              <img src="images/populer/1.jpg" alt="Beef Nihari" class="card-img">
+              <div class="card-content">
+                <h3 class="card-title">Fresh and Flavorful Beef Nihari</h3>
+                <p class="card-date">August 28, 2024</p>
+                <a href="#" class="card-link">Read More »</a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="popular-btn text-center">
+            <a class="btn-11" href="#">Explore More</a>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- recipe -->
+
+
+
+
+
+    <!-- countdown -->
+      <section id="count">
+        <div class="container">
+          <div class="countdown">
+            
+            <div class="wrapper">
+              <div class="counter">
+                <div class="progress-circle">
+                  <svg viewBox="0 0 36 36">
+                    <path class="bg" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <path class="progress" stroke-dasharray="0, 100" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  </svg>
+                  <i class="fa fa-desktop"></i>
+                </div>
+                <div class="counter-flex">
+                  <h2 class="timer count-title count-number" data-to="1500" data-speed="2000"></h2><span></span>
+                </div>
+                <p class="count-text">Products</p>
+              </div>
+            </div>
+      
+            <div class="wrapper">
+              <div class="counter">
+                <div class="progress-circle">
+                  <svg viewBox="0 0 36 36">
+                    <path class="bg" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <path class="progress" stroke-dasharray="0, 100" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  </svg>
+                  <i class="fa fa-heart"></i>
+                </div>
+                <div class="counter-flex">
+                  <h2 class="timer count-title count-number" data-to="450" data-speed="2000"></h2><span></span>
+                </div>
+                <p class="count-text">Happy Clients</p>
+              </div>
+            </div>
+      
+            <div class="wrapper">
+              <div class="counter">
+                <div class="progress-circle">
+                  <svg viewBox="0 0 36 36">
+                    <path class="bg" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <path class="progress" stroke-dasharray="0, 100" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  </svg>
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="counter-flex">
+                  <h2 class="timer count-title count-number" data-to="30" data-speed="2000"></h2><span></span>
+                </div>
+                <p class="count-text">Rewards</p>
+              </div>
+            </div>
+      
+            <div class="wrapper">
+              <div class="counter">
+                <div class="progress-circle">
+                  <svg viewBox="0 0 36 36">
+                    <path class="bg" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <path class="progress" stroke-dasharray="0, 100" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  </svg>
+                  <i class="fa fa-rocket"></i>
+                </div>
+                <div class="counter-flex">
+                  <h2 class="timer count-title count-number" data-to="0" data-speed="2000"></h2><span></span>
+                </div>
+                <p class="count-text">Product Returned</p>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+    <!-- countdown -->
+
+        <!-- recipe -->
+        <section id="recipe">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-lg-12">
+                <div class="popular-title text-center">
+                  <h2 >Recent View</h2>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                <div class="food-card">
+                  <img src="images/populer/1.jpg" alt="Beef Nihari" class="card-img">
+                  <div class="card-content">
+                    <h3 class="card-title">Fresh and Flavorful Beef Nihari</h3>
+                    <p class="card-date">August 28, 2024</p>
+                    <a href="#" class="card-link">Read More »</a>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                <div class="food-card">
+                  <img src="images/populer/1.jpg" alt="Beef Nihari" class="card-img">
+                  <div class="card-content">
+                    <h3 class="card-title">Fresh and Flavorful Beef Nihari</h3>
+                    <p class="card-date">August 28, 2024</p>
+                    <a href="#" class="card-link">Read More »</a>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+                <div class="food-card">
+                  <img src="images/populer/1.jpg" alt="Beef Nihari" class="card-img">
+                  <div class="card-content">
+                    <h3 class="card-title">Fresh and Flavorful Beef Nihari</h3>
+                    <p class="card-date">August 28, 2024</p>
+                    <a href="#" class="card-link">Read More »</a>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="popular-btn text-center">
+                <a class="btn-11" href="#">Explore More</a>
+              </div>
+            </div>
+          </div>
+         </section>
+        <!-- recipe -->
+
+      <!-- footer -->
+       <footer id="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-3">
+                <div class="footer-content">
+                  <h4>Information</h4> <br>
+                  <a href=""><p>Privacy policy</p></a>
+                  <a href=""><p>Refund policy</p></a>
+                  <a href=""><p>Shipping & Return</p></a>
+                  <a href=""><p>FAQs</p></a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3">
+                <div class="footer-content">
+                  <h4>Quick Links</h4> <br>
+                  <a href=""><p>Blog</p></a>
+                  <a href=""><p>My Account</p></a>
+                  <a href=""><p>Cart</p></a>
+                  <a href=""><p>Wishlist</p></a>
+                  <a href=""><p>Checkout</p></a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3">
+                <div class="footer-content">
+                  <h4>Contact Us</h4> <br>
+                  <p>Find a location nearest <br> you. <strong class="strong"><a href="">See Our Stores</a></strong></p>
+                  <a href=""><p>+1 757-775-2763</p></a>
+                  <a href=""><p>hello@hrhalalfood.us</p></a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3">
+                <div class="footer-content">
+                  <h4>Our Company</h4> <br>
+                  <p><strong>Address:</strong> 627 <br> Pilot House DR, Newport News<br> VA 23606, USA.</p>
+                  <p><strong>Hours:</strong> &nbsp; 9.00am - 4.00pm <br> Monday to Friday</p>
+                 
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="social-icons d-flex">
+                  <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                  <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+       </footer>
+      <!-- footer -->
+
+
+      <!-- copyright -->
+       <section id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="copyright-con text-left">
+                <p>Copyright 2024 © HR HALAL Foods. All rights reserved. Designed and developed by <a href="">Gingham</a>.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="copyright-con text-right">
+                <img src="images/payment.png" alt="" srcset="">
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+      <!-- copyright -->
+    
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        // Banner slider
+        $('.banner-slider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          arrows: false,
+          dots: true
+        });
+    
+        // Popular slider
+        $('.popular-slider').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          arrows: false,
+          dots: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+      });
+    </script>
+
+<script>
+  window.addEventListener('load', () => {
+    const logo = document.querySelector('.navbar-brand');
+    logo.classList.add('animate__animated', 'animate__backInRight');
+  });
+</script>
+
+    
+</body>
+</html>
